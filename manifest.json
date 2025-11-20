@@ -1,6 +1,8 @@
 {
+  "id": "com.jaitnkumar.tapjump",
   "name": "Tap Jump",
   "short_name": "TapJump",
+  "description": "Tap Jump \u2014 a tiny hyper-casual one-tap arcade game. Tap to jump over obstacles and beat your high score. Ready to install and play offline.",
   "icons": [
     {
       "src": "icons/icon-192.png",
@@ -14,7 +16,21 @@
     }
   ],
   "start_url": "./",
+  "scope": "./",
   "display": "standalone",
+  "orientation": "portrait",
   "background_color": "#87CEEB",
-  "theme_color": "#6EC1FF"
+  "theme_color": "#6EC1FF",
+  "categories": [
+    "arcade",
+    "game",
+    "casual"
+  ],
+  "screenshots": [
+    {
+      "src": "screenshots/screen1.png",
+      "sizes": "1280x720",
+      "type": "image/png"
+    }
+  ]
 }
