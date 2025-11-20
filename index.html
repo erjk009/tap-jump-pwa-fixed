@@ -3,24 +3,31 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Tap Jump — Hyper Casual</title>
+  <title>Tap Jump</title>
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="container">
+  <div id="app">
     <canvas id="game"></canvas>
-    <div id="ui">
-      <div id="score">Score: <span id="score-val">0</span></div>
-      <div id="instructions">Tap or click to jump — survive as long as you can</div>
-      <button id="restart" style="display:none">Restart</button>
+    <div id="ui-top">
+      <div id="score">0</div>
+      <button id="mute">🔊</button>
+    </div>
+    <div id="menu" class="overlay">
+      <img src="assets/promo-banner.png" alt="TapJump" class="banner">
+      <h1>Tap Jump</h1>
+      <p>Tap to jump over obstacles. Simple, fun, addictive.</p>
+      <button id="start">Play</button>
+      <div id="high">High Score: <span id="highscore">0</span></div>
+    </div>
+    <div id="gameover" class="overlay" style="display:none">
+      <h2>Game Over</h2>
+      <div>Your score: <span id="finalscore">0</span></div>
+      <button id="retry">Retry</button>
+      <button id="home">Home</button>
     </div>
   </div>
   <script src="game.js"></script>
-  <script>
-    if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("service-worker.js");
-    }
-  </script>
 </body>
 </html>

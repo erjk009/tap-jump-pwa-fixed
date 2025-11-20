@@ -1,3 +1,3 @@
-# Tap Jump PWA - Play Store ready package
+Final Tap Jump package with integrated graphics. Upload to GitHub Pages or convert to APK via PWABuilder.
 
-This package includes an updated manifest with description, id, orientation, categories and a screenshot for PWABuilder/Play Store use.
+How to run locally: open index.html in browser.
